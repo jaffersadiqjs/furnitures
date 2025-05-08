@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+</head>
+<style>
+     .whole-top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo-side-edit{
+        display: flex;
+        gap: 15px;
+    }
+    .anger-edit{
+        display: flex;
+        gap: 35px;
+        color: black;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .logo-edit{
+        height: 30px;
+        width: 40px;
+        margin-top: 20px;
+    }
+    .logo-head{
+        font-size: 22px;
+        color:  #FF4E80;
+    }
+    .signup-btn{
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
+
+        color: white;
+        background-color: #FF0048;
+        border: NONE;
+        
+
+    }
+    span{
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+    }
+    .head-bg{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+    }
+    .para-bg{
+        font-size: 17px;
+        font-style: italic;
+        color: white;
+    }
+    .bg-whole{
+        background-image: url("image/11 (69).png");
+        background-size: cover;
+        height: 500px;
+        padding: 50px;
+    }
+    .overall-div{
+        color: white;
+        margin-top: 100px;
+    }
+    .footer-sec{
+        display: flex;
+        justify-content: space-around;
+        gap: 150px;
+        margin-top: 50px;
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+        color:gray;
+        font-size: 16px;
+    }
+    .bxl-facebook{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-instagram{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-youtube{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-twitter{
+        font-size: 32px;
+        
+
+    }
+    .footer-overall{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-logo{
+        display: flex;
+        gap: 20px;
+    }
+    .elevate-edit{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 50px;
+
+    }
+    .elevate-head{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .elevate-btn{
+        color: white;
+        font-size: 15px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        height: 42px;
+        width: 160px;
+        margin-top: 40px;
+
+    }
+    .first-last{
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+    }
+    .first-img-bg{
+        background-color: #781DBc;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        
+        font-weight: bold;
+        text-align: center;
+
+    }
+    h2{
+        text-align: center;
+        padding: 50px;
+        font-size: 20px;
+    }
+    .second-img-bg{
+        background-color: #584F46;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .third-img-bg{
+        background-color: #000000;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+    .over-img-form{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .input-edit{
+        height: 30px;
+        width: 190px;
+        border-radius: 7px;
+        
+    }
+    .input-edit-mail{
+        height: 30px;
+        width: 430px;
+        border-radius: 7px;
+        
+
+    }
+    .input-edit-textarea{
+        height: 70px;
+        width: 430px;
+        border-radius: 7px;
+        margin-bottom: 30px;
+
+    }
+    .form-btn{
+        color: white;
+        font-size: 15px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        height: 42px;
+        width: 500px;
+        margin-top: 40px;
+
+    }
+    @media  (max-width: 768px) {
+        .whole-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo-topper{
+        margin-top: 15px;
+        margin-left: 90px;
+    }
+    .logo-side-edit{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .anger-edit{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        color: black;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .logo-edit{
+        height: 30px;
+        width: 40px;
+        margin-top: 20px;
+    }
+    .logo-head{
+        font-size: 22px;
+        color:  #FF4E80;
+    }
+    .signup-btn{
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
+
+        color: white;
+        background-color: #FF0048;
+        border: NONE;
+        margin-top: 20px;
+        
+
+    }
+    span{
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+    }
+
+        
+    }
+    @media  (max-width: 768px){
+
+   
+.footer-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 10px;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+    color:gray;
+    font-size: 16px;
+}
+.bxl-facebook{
+    font-size: 32px;
+    margin-bottom: 12px;
+
+}
+.bxl-instagram{
+    font-size: 32px;
+    margin-bottom: 12px;
+
+}
+.bxl-youtube{
+    font-size: 32px;
+    margin-bottom: 12px;
+
+}
+.bxl-twitter{
+    font-size: 32px;
+    
+
+}
+.footer-overall{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.footer-logo{
+    display: flex;
+    gap: 20px;
+}
+}
+@media  (max-width: 768px){
+    .elevate-edit{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 50px;
+
+    }
+    .elevate-head{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .elevate-btn{
+        color: white;
+        font-size: 15px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        height: 27px;
+        width: 120px;
+        margin-top: 40px;
+
+    }
+    .first-last{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .first-img-bg{
+        background-color: #781DBc;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        
+        font-weight: bold;
+        text-align: center;
+
+    }
+    h2{
+        text-align: center;
+        padding: 50px;
+        font-size: 10px;
+    }
+    .second-img-bg{
+        background-color: #584F46;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .third-img-bg{
+        background-color: #000000;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+    .over-img-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .input-edit{
+        height: 20px;
+        width: 190px;
+        border-radius: 7px;
+        
+    }
+    .input-edit-mail{
+        height: 20px;
+        width: 140px;
+        border-radius: 7px;
+        
+
+    }
+    .input-edit-textarea{
+        height: 20px;
+        width: 140px;
+        border-radius: 7px;
+        margin-bottom: 30px;
+
+    }
+    .form-btn{
+        color: white;
+        font-size: 15px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        height: 42px;
+        width: 250px;
+        margin-top: 40px;
+
+    }
+
+}
+    
+   
+</style>
+<body>
+    <hr>
+    <section>
+        <div class="whole-top">
+            <div class="logo-side-edit">
+                <div>
+                <img src="image/game-icons_wood-pile.png" class="logo-edit">
+                </div>
+                <div>
+                    <h1 class="logo-head">Wood Asthesctics<br><span>
+                    Furnitures feel likes home</span></h1>
+                </div>
+            </div>
+            <div class="anger-edit">
+                <a href="page1.html">Home</a>
+                <a href="furnituresec.html">Furniture</a>
+                <a href="page5.html">About</a>
+                <a href="page6.html">Contact</a>
+            </div>
+            <div>
+                <!-- <button class="signup-btn">Sign Up</button> -->
+            </div>
+        </div>
+    </section>
+    <section class="bg-whole">
+        <h1 class="head-bg">Perfection in Collections : <br>
+        Get Sync with our furniture</h1>
+        <p class="para-bg">Explore furniture that harmoniously combines comfort and style<br> to elevate your home</p>
+        <div class="overall-div">
+            <div>
+                
+              <h1 >Comfort</h1>
+              <p >Cozy seating</p>
+            </div>
+            <div>
+                <h1>Quality Assurance</h1>
+                <p>Cozy seating</p>
+              </div>
+              <div>
+                <h1>Free Shipping</h1>
+                <p>No-cost Delevery</p>
+              </div>
+        </div>
+    </section>
+    <section class="over-img-form">
+        <div>
+            <h1>Get in touch</h1>
+            <p>Our friendly team would lovce to hear from you</p>
+            <div>
+         <div class="first-last">
+                <div>
+                <p>First name</p>
+                <input type="text" placeholder="first name" class="input-edit">
+            </div>
+            <div>
+                <p>Last name</p>
+                <input type="text" placeholder="Last name" class="input-edit">
+            </div>
+            </div>
+         </div>
+         <p>Email</p>
+         <input type="text" placeholder="MAIL Id" class="input-edit-mail">
+         <p>Phone Number</p>
+         <input type="text" placeholder=" ph number" class="input-edit-mail">
+         <p>Message</p>
+         <input type="textarea" class="input-edit-textarea"><br>
+         <input type="checkbox">
+         <for>You agree to our friendly Privacy Policy.</for><br>
+         <button class="form-btn">
+            Send Message
+         </button>
+        </div>
+        <div>
+            <div class="first-img-bg">
+                <h2>Handcrafted warmth.<br>Minimalized Charm</h2>
+                <img src="image/11 (89).png">
+               </div>
+               <div class="second-img-bg">
+                <img src="image/11 (91).png">
+                <h2>Elavate pour space with<br>Organic Elegance</h2>
+               </div>
+               <div class="third-img-bg">
+                <img src="image/11 (94).png">
+                <h2>Elavate pour space with<br>Organic Elegance</h2>
+               </div>
+        </div>
+
+    </section>
+    <hr>
+    <hr>
+    <section class="elevate-edit">
+        <div>
+        <h1 class="elevate-head">Elevate Your Space <br>
+        With Uncompromising <br>
+    Quality</h1>
+    <P>Experience the epitome of furniture quality. our products are<br>
+    meticulosly crafter with an unwaving commitment to excellence.</P>
+    <ol>
+        <li>Experience Unparalled Quality</li>
+        <li>Built to last for Generations</li>
+        <li>Loved by Customers Worldwide</li>
+    </ol>
+    <button class="elevate-btn">Shop Now</button>
+</div>
+<div>
+    <img src="image/11 (170).png">
+</div>
+
+    </section>
+    <footer class="footer-overall">
+        <div class="footer-logo">
+            <div>
+              <img src="image/game-icons_wood-pile.png" class="logo-edit">
+            </div>
+            <div>
+                <h1 class="logo-head">Wood Asthesctics<br><span>
+                Furnitures feel likes home</span></h1>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <div>
+                <h2>category</h2>
+                <ul>
+                    <li>Living Room</li>
+                    <li>bedroom</li>
+                    <li>Kitchen</li>
+                    <li>Bathroom</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Popular Products</h2>
+                <ul>
+                    <li>Single sofa</li>
+                    <li>Luxury white bed</li>
+                    <li>Bean bag</li>
+                    <li>Wooden chair</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Follow</h2>
+                <ul>
+                    <i class='bx bxl-facebook'></i><br>
+                    <i class='bx bxl-instagram'></i><br>
+                    <i class='bx bxl-youtube' ></i><br>
+                    <i class='bx bxl-twitter' ></i><br>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <hr>
+</body>
+</html>

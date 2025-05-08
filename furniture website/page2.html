@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<style>
+    .overall-bg{
+        background-image: url("image/11 (199).png");
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inner-bg{
+        height: 600px;
+        width: 600px;
+        border: 2px solid black;
+    }
+    .login-btn{
+        height: 50px;
+        width: 270px;
+        border: none;
+        border-radius: 8px;
+        background-color: #1EAAD5;
+        margin-left: 170px;
+        margin-top: 50px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .input-edit{
+        height: 20px;
+        width: 440px;
+        background-color: #1EAAD5;
+        border: none;
+        text-align: center;
+        margin-left: 60px;
+    }
+    h2{
+        text-align: center;
+        color: white;
+    }
+    .email-edit{
+        margin-left: 60px;
+        color: white;
+        font-size: 18px;
+    }
+    .forgot-edit{
+        margin-left: 400px;
+        color: white;
+        font-size: 18px;
+    }
+    span{
+        color: #1EAAD5;
+    }
+    .left-word{
+        color: white;
+        font-size: 30px;
+    }
+    .gm-edit{
+        padding: 20px;
+    }
+    .hello{
+        color: white;
+        margin-left: 40px;
+        font-size: 20px;
+        
+
+    }
+    .gm{
+        color: #1EAAD5;
+        margin-left: 40px;
+    }
+    @media  (max-width: 768px){
+        .overall-bg{
+        background-image: url("image/11 (199).png");
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .inner-bg{
+        height: 600px;
+        width: 260px;
+        border: 2px solid black;
+    }
+    .login-btn{
+        height: 50px;
+        width: 160px;
+        border: none;
+        border-radius: 8px;
+        background-color: #1EAAD5;
+        margin-left: 20px;
+        margin-top: 50px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .input-edit{
+        height: 3px;
+        width: 180px;
+        background-color: #1EAAD5;
+        border: none;
+        text-align: center;
+        margin-left: 20px;
+    }
+    h2{
+        text-align: center;
+        color: white;
+    }
+    .email-edit{
+        margin-left: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    .forgot-edit{
+        margin-left: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    span{
+        color: #1EAAD5;
+    }
+    .left-word{
+        color: white;
+        font-size: 15px;
+    }
+    .gm-edit{
+        padding: 20px;
+    }
+    .hello{
+        color: white;
+        margin-left: 15px;
+        font-size: 10px;
+        
+
+    }
+    .gm{
+        color: #1EAAD5;
+        margin-left: 20px;
+    }
+
+    }
+
+</style>
+<body>
+    <section class="overall-bg"> 
+        <div class="left-word">
+            <h1>Welcome to </h1>
+            <h1>WOOD ASTHETIC</h1>
+        </div>
+        
+        <div class="inner-bg">
+            <div class="gm-edit">
+            <h3 class="hello">Hello!</h3>
+            <p class="gm">Good Morning</p>
+        </div>
+            <div class="login-inner">
+                <h2><span>Log in</span> Your Account</h2>
+                <div>
+                    <form id="login-form">
+                <p class="email-edit">Email address</p>
+                <input type="email" class="input-edit" id="email" required>
+                <p class="email-edit">Password</p>
+                <input type="password" class="input-edit" id="password" required>
+                <p class="forgot-edit">Forget Password</p>
+        <!-- <a href="page1.html"> -->
+                <button class="login-btn" type="submit">log in</button>
+            </a>
+        </form>
+        <div id="error-message"></div>
+            </div>
+            </div>
+        </div>
+       
+    </section>
+    <script>
+        const loginForm = document.getElementById('login-form');
+    const errorMessage = document.getElementById('error-message');
+    
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+    
+      // Basic validation
+      if (email === 'jaffersadiq2697@gmail.com' && password === 'jas123') {
+        // Redirect to another page
+        window.location.href="page1.html";
+      } else {
+        alert('Invalid email or password');
+      }
+    });
+
+    
+      </script>
+</body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+</head>
+
+<style>
+    .whole-top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+    .logo-topper{
+        margin-top: 15px;
+    }
+    .logo-side-edit{
+        display: flex;
+        gap: 15px;
+    }
+    .anger-edit{
+        display: flex;
+        gap: 35px;
+        color: black;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .logo-edit{
+        height: 30px;
+        width: 40px;
+        margin-top: 20px;
+    }
+    .logo-head{
+        font-size: 22px;
+        color:  #FF4E80;
+    }
+    .signup-btn{
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
+
+        color: white;
+        background-color: #FF0048;
+        border: NONE;
+        
+
+    }
+    span{
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+    }
+    @media  (max-width: 768px) {
+        .whole-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo-topper{
+        margin-top: 15px;
+        margin-left: 90px;
+    }
+    .logo-side-edit{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .anger-edit{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        color: black;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .logo-edit{
+        height: 30px;
+        width: 40px;
+        margin-top: 20px;
+    }
+    .logo-head{
+        font-size: 22px;
+        color:  #FF4E80;
+    }
+    .signup-btn{
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
+
+        color: white;
+        background-color: #FF0048;
+        border: NONE;
+        margin-top: 20px;
+        
+
+    }
+    span{
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+    }
+
+        
+    }
+    
+    .main-bg{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .head-main{
+        font-size: 80px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .main-btn{
+        height: 40px;
+        width: 140px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1 px solid black;
+    }
+
+    @media  (max-width: 768px){
+
+  
+    .main-bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .head-main{
+        font-size: 35px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .main-btn{
+        height: 40px;
+        width: 110px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1 px solid black;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .main-img-md{
+        width: 100%;
+        height: 300px;
+    }
+}
+    .country-edit{
+        display: flex;
+    
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ulll{
+        display: flex;
+        gap: 60px;
+        list-style-type: none;
+        color:gray;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 100px;
+    }
+    @media  (max-width: 768px){
+        .country-edit{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ulll{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        list-style-type: none;
+        color:gray;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    }
+    .mid-section{
+        text-align: center;
+    }
+    .mid-btn{
+        height: 42px;
+        width: 190px;
+        color: #FF4E80;
+        font-weight: bold;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        font-size: 18px;
+    }
+    .mid-head{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .mid-para{
+        font-style: italic;
+        font-size: 22px;
+
+    }
+    .mid-img{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    @media  (max-width: 768px){
+        .mid-section{
+        text-align: center;
+    }
+    .mid-btn{
+        height: 42px;
+        width: 100%;
+        color: #FF4E80;
+        font-weight: bold;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .mid-head{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .mid-para{
+        font-style: italic;
+        font-size: 14px;
+
+    }
+    .mid-img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mid-img-edit{
+        width: 250px;
+        overflow: hidden;
+        height: 300px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    }
+    .rating-div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .overall-black-section{
+        background-color: black;
+        height: 500px;
+        color: white;
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        font-size: 23px;
+        
+    }
+    .quality-edit{
+        color: #FF4E80;
+        font-size: 30px;
+    }
+    .bx-star{
+        font-size: 20px;
+       
+    }
+    .star-edit{
+        color: gold;
+    }
+    @media  (max-width: 768px){
+        .rating-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .overall-black-section{
+        background-color: black;
+        height: 1300px;
+        color: white;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 15px;
+        margin-left: 20px;
+        padding: 10px;
+        
+    }
+    .quality-edit{
+        color: #FF4E80;
+        font-size: 15px;
+    }
+    .bx-star{
+        font-size: 20px;
+       
+    }
+    .star-edit{
+        color: gold;
+    }
+
+
+    }
+
+    
+
+
+    .elevate-edit{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 50px;
+
+    }
+    .elevate-head{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .elevate-btn{
+        color: white;
+        font-size: 15px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        height: 42px;
+        width: 160px;
+        margin-top: 40px;
+
+    }
+    ol{
+        list-style-type: none;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    @media  (max-width: 768px){
+        .elevate-edit{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 30px;
+        overflow: hidden;
+
+    }
+    .elevate-head{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .elevate-btn{
+        color: white;
+        font-size: 15px;
+        background-color: black;
+        border: none;
+        border-radius: 8px;
+        height: 42px;
+        width: 160px;
+        margin-top: 40px;
+
+    }
+    ol{
+        list-style-type: none;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    }
+
+    @media  (max-width: 768px){
+        .elavete-img-edit-md{
+        width: auto;
+        height: 300px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        overflow: hidden;
+    }
+
+    }
+   
+    .imgggg{
+       background-image: url("image/11 (201).png"); 
+       height: 500px;
+       background-size: cover;
+    }
+    .imgggg-head{
+        font-size: 45px;
+        color: white;
+        padding: 50px;
+    }
+    .sub-base{
+        height: 80px;
+        width: 270px;
+        border: 1px solid black;
+        background-color: white;
+    }
+    .sub-btn{
+        color: white;
+        font-size: 15px;
+        background-color:#FF4E80;
+        border: none;
+        height: 35px;
+        width: 160px;
+        margin-top: 20px;
+        margin-left:90px;
+        
+    }
+    .overall-sub{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 35px;
+    }
+    .sub-head{
+        color: white;
+        font-size: 30px;
+    }
+
+
+    @media (max-width: 768px) {
+        .sub-base{
+        height: 60px;
+        width: auto;
+        border: 1px solid black;
+        background-color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sub-btn{
+        color: white;
+        font-size: 15px;
+        background-color:#FF4E80;
+        border: none;
+        height: 20px;
+        width: 160px;
+        margin-top: 20px;
+        margin-left: 15px;
+        
+    }
+    .overall-sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 35px;
+    }
+    .sub-head{
+        color: white;
+        font-size: 14px;
+    }
+    }
+    .footer-sec{
+        display: flex;
+    
+        justify-content: space-around;
+        gap: 150px;
+        margin-top: 100px;
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+        color:gray;
+        font-size: 16px;
+    }
+    .bxl-facebook{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-instagram{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-youtube{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-twitter{
+        font-size: 32px;
+        
+
+    }
+    .footer-overall{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+
+
+    @media  (max-width: 768px){
+
+   
+    .footer-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+        color:gray;
+        font-size: 16px;
+    }
+    .bxl-facebook{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-instagram{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-youtube{
+        font-size: 32px;
+        margin-bottom: 12px;
+
+    }
+    .bxl-twitter{
+        font-size: 32px;
+        
+
+    }
+    .footer-overall{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .footer-logo{
+        display: flex;
+        gap: 20px;
+    }
+}
+   
+
+   
+</style>
+<body>
+    <hr>
+    <section>
+        <div class="whole-top">
+            <div class="logo-side-edit">
+                <div>
+                
+                </div>
+                <div class="logo-topper">
+                    <img src="image/11 (179).png">
+                </div>
+            </div>
+            <div class="anger-edit">
+                <a href="page1.html">Home</a>
+                <a href="furnituresec.html">Furniture</a>
+                <a href="page4.html">About</a>
+                <a href="page5.html">Contact</a>
+            </div>
+            <div>
+                <a href="page2.html">
+                <button class="signup-btn">Sign Up</button>
+            </a>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+     <div class="main-bg">
+        <div>
+            <h1 class="head-main">Perfect <br>Harmony : <br>Comfort & Style</h1>
+            <p>Explore furniture that harmoniously combines comfort and style to <br>elevate your home</p>
+            <a href="furnituresec.html">
+            <button class="main-btn">Explore Our Offers</button>
+        </a>
+        </div>
+        <div>
+            <img src="image/11 (200).png" class="main-img-md" >
+        </div>
+    </div>
+    </section>
+    <section class="country-edit">
+        <div>
+            <ul class="ulll">
+                <li>INDIA</li>
+                <li>AMERICA</li>
+                <li>UAE</li>
+                <li>SRILANKA</li>
+                <li>LONDON</li>
+            
+            </ul>
+        </div>
+            <div>
+                <img src="image/11 (182).png" width="100%">
+            </div>
+        
+    </section>
+    <section class="mid-section">
+        <button class="mid-btn">Check Our Collection</button>
+        <h1 class="mid-head">Our Furniture Gallery</h1>
+        <p class="mid-para">Explore Our Gallery of Inspiring Designs</p>
+    </section>
+    <section>
+        <div class="mid-img">
+        <img src="image/11 (167).png" class="mid-img-edit">
+        <img src="image/11 (168).png" class="mid-img-edit">
+        <img src="image/11 (185).png" class="mid-img-edit">
+    </div>
+    <div class="mid-img">
+        <img src="image/11 (185).png" class="mid-img-edit">
+        <img src="image/11 (167).png" class="mid-img-edit">
+        <img src="image/11 (168).png" class="mid-img-edit">
+    </div>
+        
+    </section>
+    <section class="overall-black-section">
+        <div>
+        <h1>Our Dedication to Your <br>Satisfaction</h1>
+        <p>We take pride in our unwavering commitment to quality and customer <br>
+        satisfaction. with a track record of excellence, we provide you with the<br>
+    finest furniture and a service you can trust</p>
+    <div class="rating-div">
+        <div>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <p>4.9 /5 rating</p>
+        <p class="quality-edit">Quality</p>
+    </div>
+    <div>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <i class='bx bx-star star-edit'></i>
+        <p>4.9 /5 rating</p>
+        <p class="quality-edit">Customer Satisfaction</p>
+    </div>
+    </div>
+</div>
+<div>
+<h1>Quality Craftsmanship</h1>
+<p>Our furniture is meticulously handcrafted to stand<br>
+the test of time, ensuring it can be enjoyed for<br>
+ generations to come</p>
+ <h1>Extensive Selection</h1>
+<p>Our furniture is meticulously handcrafted to stand<br>
+the test of time, ensuring it can be enjoyed for<br>
+ generations to come</p>
+ <h1>Dedicated Customer Support</h1>
+<p>Our furniture is meticulously handcrafted to stand<br>
+the test of time, ensuring it can be enjoyed for<br>
+ generations to come</p>
+</div>
+    </section>
+    <section class="elevate-edit">
+        <div>
+        <h1 class="elevate-head">Elevate Your Space <br>
+        With Uncompromising <br>
+    Quality</h1>
+    <P>Experience the epitome of furniture quality. our products are<br>
+    meticulosly crafter with an unwaving commitment to excellence.</P>
+    <ol>
+        <li>Experience Unparalled Quality</li>
+        <li>Built to last for Generations</li>
+        <li>Loved by Customers Worldwide</li>
+    </ol>
+    <a href="furnituresec.html">
+    <button class="elevate-btn">Shop Now</button>
+</a>
+</div>
+<div>
+    <img src="image/11 (170).png" class="elavete-img-edit-md" width="100%">
+</div>
+
+    </section>
+    <section class="imgggg">
+       <h1 class="imgggg-head">Your Furniture<br>Review</h1>
+    </section>
+    <section class="overall-sub">
+        <div>
+        <h1 class="sub-head">Subscribe to get attractive <br>Offers on our products</h1>
+    </div>
+        <div>
+            <div class="sub-base">
+    
+                    <button class="sub-btn">Subscribe</button>
+                
+            </div>
+        </div>
+    </section>
+    
+   
+    <footer class="footer-overall">
+        <div class="footer-logo">
+            <div>
+              <img src="image/game-icons_wood-pile.png" class="logo-edit">
+            </div>
+            <div>
+                <h1 class="logo-head">Wood Asthesctics<br><span>
+                Furnitures feel likes home</span></h1>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <div>
+                <h2>category</h2>
+                <ul>
+                    <li>Living Room</li>
+                    <li>bedroom</li>
+                    <li>Kitchen</li>
+                    <li>Bathroom</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Popular Products</h2>
+                <ul>
+                    <li>Single sofa</li>
+                    <li>Luxury white bed</li>
+                    <li>Bean bag</li>
+                    <li>Wooden chair</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Follow</h2>
+                <ul>
+                    <i class='bx bxl-facebook'></i><br>
+                    <i class='bx bxl-instagram'></i><br>
+                    <i class='bx bxl-youtube' ></i><br>
+                    <i class='bx bxl-twitter' ></i><br>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <hr>
+
+   
+</body>
+</html>
